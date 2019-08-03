@@ -1,0 +1,20 @@
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    body,
+    #root {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+// USED to Test for CSS Misalignments //
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+//   }
