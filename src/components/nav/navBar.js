@@ -9,7 +9,7 @@ export default class NavBar extends Component {
 
         return (
             <Fragment>
-                <Navbar className={`container-fluid navBarContainer ${navSize}`} sticky="top" collapseOnSelect expand="lg" bg={headerColor} variant="dark">
+                <Navbar className={`container-fluid navBarContainer ${navSize}`} sticky="top" collapseOnSelect expand="md" bg={headerColor} variant="dark">
                     <Navbar.Brand href="#home">
                         {/* <img
                             // src= {whiteLogo}
@@ -21,10 +21,10 @@ export default class NavBar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link className={textColor} href="navFontStyle #about">OUR SERVICES</Nav.Link>
-                            <Nav.Link className={textColor} href="#services">OUR WORK</Nav.Link>
-                            <Nav.Link className={textColor} href="#work">CONTACT</Nav.Link>
-                            <Nav.Link className={textColor} href="#about">CLIENT LOGIN</Nav.Link>
+                            <Nav.Link className={textColor} href="navFontStyle #servicesx">OUR SERVICES</Nav.Link>
+                            <Nav.Link className={textColor} href="#work">OUR WORK</Nav.Link>
+                            <Nav.Link className={textColor} href="#contact">CONTACT</Nav.Link>
+                            <Nav.Link className={textColor} href="#login">CLIENT LOGIN</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

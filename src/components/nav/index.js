@@ -7,18 +7,38 @@ export default class NavHeader extends Component {
     state = {
         color: 'clear',
         textColor: 'text-white',
-        navSize: 'navSizeGrow'
+        navSize: 'navSizeGrow',
+        timeoutDebounce: null
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.listenScrollEvent)
+        window.addEventListener('scroll', this.debounce)
     }
+
+    debounce = e => {
+        let { timeoutDebounce } = this.state;
+
+        if (timeoutDebounce) {
+            return;
+        }
+
+        timeoutDebounce = setTimeout(this.clearDebounce, 250);
+        this.listenScrollEvent(e);
+    }
+
+    clearDebounce = () => {
+        this.setState({
+            timeoutDebounce: null
+        })
+    }
+
+
 
     listenScrollEvent = e => {
         if (window.scrollY > 10) {
             this.setState({
-                color: 'white',
-                textColor: 'text-dark',
+                color: 'dark',
+                textColor: 'text-white',
                 navSize: 'navBarShrink '
             })
         } else {
