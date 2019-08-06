@@ -1,7 +1,11 @@
+@import  '../../assets/stylesheets/mediaQueries.scss';
+
 .navBarContainer {
     margin:0;
     font-family: 'Montserrat', sans-serif;
 }
+
+
 
     //NavBar on Scroll
     .navBarShrink {
@@ -22,4 +26,28 @@
         -webkit-transition: all 0.8s ease;
         transition: all 0.8s ease;
         position: fixed;
+    }
+    
+    @include medium {
+        html:not([data-scroll='0']){
+            div#responsive-navbar-nav { 
+                background-color: #343a40; 
+            }
+        }
+    }
+
+    @include small {
+        html:not([data-scroll='0']){
+            div#responsive-navbar-nav { 
+                background-color: #343a40; 
+            }
+        }
+    }
+
+    @include extraSmall {
+        html:not([data-scroll='0']){
+            div#responsive-navbar-nav { 
+                background-color: #343a40; 
+            }
+        }
     }
