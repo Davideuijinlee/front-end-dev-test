@@ -6,17 +6,17 @@ import './heroImg.scss';
 
 export default () => {
     return (
-        <div id="heroImgCarousel" className="carousel slide carousel-fade" data-ride="carousel">
+        <div id="heroImgCarousel" className="carousel slide carousel-fade" data-pause="false" data-ride="carousel">
             <div className="carousel-inner">
-                <div className="heroImgContainer carousel-item active" data-interval="5000">
+                <div className="heroImgContainer carousel-item active" data-interval="8000">
                 {/* eslint-disable-next-line */}
                     <img src={hero1} className="heroImg d-block" alt="Nighttime photo of Golden Gate Bridge in San Francisco"  />
                 </div>
-                <div className="heroImgContainer carousel-item" data-interval="5000">
+                <div className="heroImgContainer carousel-item" data-interval="8000">
                 {/* eslint-disable-next-line */}
                     <img src={hero2} className="heroImg d-block" alt="Evening photo of the city of San Francisco" />
                 </div>
-                <div className="heroImgContainer carousel-item" data-interval="5000">
+                <div className="heroImgContainer carousel-item" data-interval="8000">
                  {/* eslint-disable-next-line */}
                     <img src={hero3} className="heroImg d-block" alt="Evening photo of the city of San Francisco" />
                 </div>
