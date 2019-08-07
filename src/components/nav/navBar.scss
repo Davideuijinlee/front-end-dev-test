@@ -28,26 +28,26 @@
         position: fixed;
     }
     
-    @include medium {
-        html:not([data-scroll='0']){
-            div#responsive-navbar-nav { 
-                background-color: #343a40; 
-            }
-        }
-    }
+    // @include medium {
+    //     html:not([data-scroll='0']){
+    //         div#responsive-navbar-nav { 
+    //             background-color: #343a40; 
+    //         }
+    //     }
+    // }
 
-    @include small {
-        html:not([data-scroll='0']){
-            div#responsive-navbar-nav { 
-                background-color: #343a40; 
-            }
-        }
-    }
+    // @include small {
+    //     html:not([data-scroll='0']){
+    //         div#responsive-navbar-nav { 
+    //             background-color: #343a40; 
+    //         }
+    //     }
+    // }
 
-    @include extraSmall {
-        html:not([data-scroll='0']){
-            div#responsive-navbar-nav { 
-                background-color: #343a40; 
-            }
-        }
-    }
+    // @include extraSmall {
+    //     html:not([data-scroll='0']){
+    //         div#responsive-navbar-nav { 
+    //             background-color: #343a40; 
+    //         }
+    //     }
+    // }
