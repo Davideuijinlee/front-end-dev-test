@@ -4,7 +4,7 @@ import '../assets/stylesheets/app.scss';
 import HeroImg from './heroImg';
 import NavigationBar from './nav';
 import About from './about';
-// import MeetTheTeam from './meetTheTeam';
+import MeetTheTeam from './meetTheTeam';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <HeroImg />
       <NavigationBar />
       <About />
-      {/* <MeetTheTeam /> */}
+      <MeetTheTeam />
     </Fragment>
   );
 }
