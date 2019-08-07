@@ -35,6 +35,8 @@ export default class NavHeader extends Component {
 
 
     listenScrollEvent = e => {
+
+        
         if (window.scrollY > 10) {
             this.setState({
                 color: 'dark',
