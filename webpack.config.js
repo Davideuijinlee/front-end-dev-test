@@ -1,21 +1,33 @@
-module.exports = {
-    entry: './public/index.html',
+const webpack = require('webpack');
+const path = require('path');
+var config = {
+    entry: './src/index.js',
+
     output: {
-      path: __dirname,
-      filename: 'bundle.js'
+        path: path.join(__dirname, '/dist'),
+        filename: 'index.js',
+    },
+
+    devServer: {
+        inline: true,
+        port: 8080
+    },
+    resolveLoader: {
+        modules: [path.join(__dirname, 'node_modules')]
     },
     module: {
-      loaders: [
-        {
-          loader: 'babel-loader',
-          query: {
-            presets: ['react']
-          },
-          // match files based on pattern
-          test: /\.js$/,
-          // ignore files matching pattern
-          exclude: /node_modules/
-        }
-      ]
-    }
-  };
+        loaders: [
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            }
+        ]
+    },
+}
+
+module.exports = config;
