@@ -1,8 +1,11 @@
+@import  '../../assets/stylesheets/mediaQueries.scss';
 
 .meetContainer{
     padding:0;
     height: 80%;
-    background-color: pink;
+    overflow:hidden;
+
+
 
     .meetImgContainer{
         height:100%;
@@ -17,7 +20,7 @@
     }
 
     .meetTextContainer{
-        position: absolute;
+        // position: absolute;
         height:100%;
         font-family: 'Montserrat', sans-serif;
         color: #613476;
@@ -28,4 +31,35 @@
         }
     }
 
+}
+
+@include medium{
+    .meetContainer{
+        margin-top:6%;
+        padding:0;
+        height: 32%;
+        overflow:hidden;
+        text-align: center;
+
+    }
+}
+
+
+@include small{
+    .meetContainer{
+        margin-top:10%;
+        padding:0;
+        height: 40%;
+        text-align: center;
+    }
+}
+
+@include extraSmall{
+    .meetContainer{
+        margin-top:10%;
+        padding:0;
+        height: 40%;
+        overflow:hidden;
+        text-align: center;
+    }
 }
