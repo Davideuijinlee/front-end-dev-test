@@ -19,7 +19,6 @@ export default class WhatWeDo extends Component{
 
     render(){
         const { images } = this.state;
-
         return(
         <div className="container-fluid whatWeDoContainer">
             {images.map(images => {
@@ -38,5 +37,4 @@ export default class WhatWeDo extends Component{
             </div>
         )
     }
-
 }
