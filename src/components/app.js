@@ -7,6 +7,7 @@ import About from './about';
 import MeetTheTeam from './meetTheTeam';
 import WhatWeDo from './whatwedo';
 import LearnMore from './learnMore';
+import Reviews from './reviews';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <MeetTheTeam />
       <WhatWeDo />
       <LearnMore />
+      <Reviews />
     </Fragment>
   );
 }
