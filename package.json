@@ -1,5 +1,6 @@
 {
   "name": "rooster_grin",
+  "homepage": "http://devroostergrin.davidelee.net",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

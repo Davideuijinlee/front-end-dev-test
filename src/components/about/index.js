@@ -1,7 +1,6 @@
 import React from 'react';
 import './about.scss';
 import loremImg1 from '../../assets/images/lorem_images/img-1.jpg';
-import loremImg2 from '../../assets/images/lorem_images/img-2.jpg';
 
 
 export default () => {
