@@ -8,7 +8,7 @@ export default props => {
                     <text x="5" y="1" textAnchor="middle" fontSize=".7" fill="none" strokeWidth=".03" stroke="#fff" fontFamily="sans-serif">WELCOME TO</text>
                 </svg>
                 <div className="heroTextCompany">ROOSTER GRIN</div>
-                <button class="heroBtn">Learn More</button> 
+                <button className="heroBtn">Learn More</button> 
             </h1>
         </div>
     )

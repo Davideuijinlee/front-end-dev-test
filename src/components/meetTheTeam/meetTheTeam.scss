@@ -4,62 +4,80 @@
     padding:0;
     height: 80%;
     overflow:hidden;
+    background: url('../../assets/images/banner/banner-1.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
-
-
-    .meetImgContainer{
-        height:100%;
-        padding:0;
-
-
-        .meetImg{
-            width:100%;
-            max-height: 100%;
-            
-        }
+    .row{
+        margin: 0;
     }
 
     .meetTextContainer{
-        // position: absolute;
-        height:100%;
+        padding: 0;
+        margin-top: 15%;
         font-family: 'Montserrat', sans-serif;
         color: #613476;
-
-        .meetTitle{
-            top: 30%;
-            margin-bottom: 2%;
-        }
+        align-items: center;
+        justify-content: center;
     }
+}
 
+@include small {
+    .meetContainer{
+        padding:0;
+        height: 80%;
+        // overflow:hidden;
+        background: url('../../assets/images/banner/banner-1.jpg') no-repeat right center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+    }
+}
+
+@include extraSmall {
+    .meetContainer{
+        padding:0;
+        height: 80%;
+        // overflow:hidden;
+        background: url('../../assets/images/banner/banner-1.jpg') no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+    }
+}
+
+.meetTheTeamBtn{
+    padding:0;
+    position: relative;
+    left: 15px;
 }
 
 @include medium{
-    .meetContainer{
-        margin-top:6%;
-        padding:0;
-        height: 32%;
-        overflow:hidden;
-        text-align: center;
-
+    .meetTheTeamBtn{
+        position: relative;
+        left: 0;
     }
 }
 
-
 @include small{
-    .meetContainer{
-        margin-top:10%;
-        padding:0;
-        height: 40%;
-        text-align: center;
+    .meetTheTeamBtn{
+        position: relative;
+        left: 0;
     }
 }
 
 @include extraSmall{
-    .meetContainer{
-        margin-top:10%;
-        padding:0;
-        height: 40%;
-        overflow:hidden;
-        text-align: center;
+    .meetTheTeamBtn{
+        position: relative;
+        left: 0;
     }
 }
+
+
+

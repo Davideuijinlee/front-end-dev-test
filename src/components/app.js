@@ -5,6 +5,7 @@ import HeroImg from './heroImg';
 import NavigationBar from './nav';
 import About from './about';
 import MeetTheTeam from './meetTheTeam';
+import WhatWeDo from './whatwedo';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <NavigationBar />
       <About />
       <MeetTheTeam />
+      <WhatWeDo />
     </Fragment>
   );
 }
