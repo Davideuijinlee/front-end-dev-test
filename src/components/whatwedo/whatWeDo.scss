@@ -1,0 +1,101 @@
+.whatWeDoContainer {
+    height: 60%;
+    padding: 0;
+
+    .whatWeDoItemContainer {
+        height: 100%;
+        background-color: #FAFAFA;
+
+        .hoverBoxPreview {
+            height: 100%;
+        }
+
+        .hoverBoxContainer {
+            height: 100%;
+            overflow: hidden;
+
+        }
+
+        .hoverBoxPreview {
+            margin-top:5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photobox__preview {
+            display: block;
+            max-width: 100%;
+            height: 100%;
+        }
+
+        .hoverBoxPreview:before {
+            content: "";
+        }
+
+
+        .hoverBoxContainerType .hoverBoxPreview:before {
+            width: 0;
+            height: 0;
+            padding: 25%;
+
+            background-color: var(--photoboxOverlay, rgba(0, 0, 0, .8));
+            border-radius: 50%;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transition: transform calc(var(--photoboxAnimationDuration, .8s) / 8) ease;
+            will-change: transform;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        .hoverBoxContainerType:hover .hoverBoxPreview:before {
+            transform: translate(-50%, -50%) scale(4);
+            transition-duration: var(--photoboxAnimationDuration, .8s);
+        }
+
+        .hoverBoxContainerType .hoverBoxLabel {
+            width: 100%;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            
+            font-size:42px;
+            opacity: 0;
+            transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+            will-change: opacity, transform;
+
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, 200%);
+            z-index: 3;
+        }
+
+        .hoverBoxContainerType .hoverBoxLabelText {
+            width: 100%;
+            text-align: center;
+            color: white;
+            opacity: 0;
+            transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+            will-change: opacity, transform;
+
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 200%);
+            z-index: 3;
+        }
+
+        .hoverBoxContainerType:hover .hoverBoxLabel,
+        .hoverBoxContainerType:hover .hoverBoxLabelText {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            transition-duration: calc(var(--photoboxAnimationDuration, .8s) / 2);
+            transition-delay: calc(var(--photoboxAnimationDuration, .8s) / 4);
+        }
+
+
+    }
+}

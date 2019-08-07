@@ -1,18 +1,14 @@
 import React from 'react';
 import './meetTheTeam.scss';
-import teamBanner from '../../assets/images/banner/banner-1.jpg';
 
 export default () => {
     return (
         <div className="meetContainer">
             <div className="row">
-                <div className="d-none d-lg-block col-12 meetImgContainer">
-                    <img className="meetImg" src={teamBanner} alt="Loving mother spending quality time with her son on a laptop" />
-                </div>
-                <div className="meetTextContainer col-lg-6">
-                    <h1 className="meetTitle offset-lg-3 col-lg-6">Lorem Ipsum
-                    </h1>
-                    <button type="button" className="btn btn-warning">Learn More</button>
+                <div className="meetTextContainer col-sm-12 col-lg-6">
+                    <h2 className="meetTitle offset-2 offset-sm-4 col-sm-6 offset-lg-3 col-lg-6">Lorem Ipsum
+                    </h2>
+                    <button type="button" className="meetTheTeamBtn offset-4 col-3 offset-sm-6 col-sm-4 offset-md-4 offset-lg-3 col-lg-3 btn btn-warning">Learn More</button>
                 </div>
             </div>
         </div>
