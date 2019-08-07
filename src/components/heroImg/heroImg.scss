@@ -32,6 +32,7 @@ svg {
     position: absolute;
     z-index:10;
     text-align: center;
+    justify-content: center;
 
     .heroTextCompany{
         position:absolute;
@@ -46,7 +47,7 @@ svg {
         .heroTextCompany{
             position:absolute;
             width:100%;
-            top: 40%;
+            top: 18%;
             color: white;
             font-size: 6vw;
             font-weight: bold;
@@ -68,12 +69,28 @@ svg {
         .heroTextCompany{
             position:absolute;
             width:100%;
-            top: 15%;
+            top: 12%;
             color: white;
             font-size: 6vw;
             font-weight: bold;
         }
     }
+    @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    @include medium {
+        .heroTextCompany{
+            position:absolute;
+            width:100%;
+            top: 45%;
+            color: white;
+            font-size: 6vw;
+            font-weight: bold;
+        }
+    }
+}
 }
 
 .fadeText {
@@ -92,3 +109,23 @@ svg {
         opacity: 1;
     }
 }
+.heroBtn{
+    font-size:1rem;
+    height: 40px;
+    width: 120px;
+    background: lightseagreen;
+    margin: 10px;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.heroBtn:hover{
+    -webkit-transform: scale(1.1);
+    background: #31708f;
+}
+
