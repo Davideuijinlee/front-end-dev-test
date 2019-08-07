@@ -1,3 +1,5 @@
+@import '../../assets/stylesheets/mediaQueries.scss';
+
 .whatWeDoContainer {
     height: 60%;
     padding: 0;
@@ -17,7 +19,7 @@
         }
 
         .hoverBoxPreview {
-            margin-top:5%;
+            margin-top: 5%;
             position: relative;
             overflow: hidden;
         }
@@ -60,8 +62,8 @@
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             color: white;
-            
-            font-size:42px;
+
+            font-size: 42px;
             opacity: 0;
             transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
             will-change: opacity, transform;
@@ -71,6 +73,26 @@
             left: 50%;
             transform: translate(-50%, 200%);
             z-index: 3;
+        }
+
+        @include medium {
+            .hoverBoxContainerType .hoverBoxLabel {
+                width: 100%;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+    
+                font-size: 36px;
+                opacity: 0;
+                transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+                will-change: opacity, transform;
+    
+                position: absolute;
+                top: 5%;
+                left: 50%;
+                transform: translate(-50%, 200%);
+                z-index: 3;
+            }
         }
 
         .hoverBoxContainerType .hoverBoxLabelText {
@@ -95,7 +117,17 @@
             transition-duration: calc(var(--photoboxAnimationDuration, .8s) / 2);
             transition-delay: calc(var(--photoboxAnimationDuration, .8s) / 4);
         }
-
-
     }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .whatWeDoContainer {
+        height: 30%;
+        padding: 0;
+    }
+
+    .whatWeDoItemContainer {
+        height: 100%;
+        background-color: #FAFAFA;
+    } 
 }

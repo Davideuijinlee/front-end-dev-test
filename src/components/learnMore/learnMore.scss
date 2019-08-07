@@ -1,10 +1,10 @@
 @import  '../../assets/stylesheets/mediaQueries.scss';
 
-.meetContainer{
+.LearnMoreContainer{
     padding:0;
     height: 80%;
     overflow:hidden;
-    background: url('../../assets/images/banner/banner-1.jpg') no-repeat center center; 
+    background: url('../../assets/images/banner/banner-2.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,7 +14,7 @@
         margin: 0;
     }
 
-    .meetTextContainer{
+    .learnMoreTextContainer{
         padding: 0;
         margin-top: 15%;
         font-family: 'Montserrat', sans-serif;
@@ -25,12 +25,12 @@
 }
 
 @include small {
-    .meetContainer{
+    .LearnMoreContainer{
         padding:0;
         height: 80%;
         // overflow:hidden;
-        background: url('../../assets/images/banner/banner-1.jpg') no-repeat center; 
-        background-position-x: 60%;
+        background: url('../../assets/images/banner/banner-2.jpg') no-repeat center; 
+        background-position-x: 30%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -40,12 +40,12 @@
 }
 
 @include extraSmall {
-    .meetContainer{
+    .LearnMoreContainer{
         padding:0;
         height: 80%;
         // overflow:hidden;
-        background: url('../../assets/images/banner/banner-1.jpg') no-repeat center center;
-        background-position-x: 60%;
+        background: url('../../assets/images/banner/banner-2.jpg') no-repeat  center; 
+        background-position-x: 30%;
 
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -55,28 +55,28 @@
     }
 }
 
-.meetTheTeamBtn{
+.learnMoreBtn{
     padding:0;
     position: relative;
     left: 15px;
 }
 
 @include medium{
-    .meetTheTeamBtn{
+    .learnMoreBtn{
         position: relative;
         left: 0;
     }
 }
 
 @include small{
-    .meetTheTeamBtn{
+    .learnMoreBtn{
         position: relative;
         left: 0;
     }
 }
 
 @include extraSmall{
-    .meetTheTeamBtn{
+    .learnMoreBtn{
         position: relative;
         left: 0;
     }

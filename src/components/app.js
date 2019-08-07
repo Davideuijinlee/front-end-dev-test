@@ -6,6 +6,7 @@ import NavigationBar from './nav';
 import About from './about';
 import MeetTheTeam from './meetTheTeam';
 import WhatWeDo from './whatwedo';
+import LearnMore from './learnMore';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About />
       <MeetTheTeam />
       <WhatWeDo />
+      <LearnMore />
     </Fragment>
   );
 }
