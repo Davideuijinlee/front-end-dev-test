@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './whatWeDo.scss';
 import expertise from '../../assets/images/svg/home-expertise.svg';
 import hygiene from '../../assets/images/svg/home-hygiene.svg';
 import lab from '../../assets/images/svg/home-lab.svg';
 import retention from '../../assets/images/svg/home-retention.svg';
 
+import './whatWeDo.scss';
 
 
 export default class WhatWeDo extends Component{

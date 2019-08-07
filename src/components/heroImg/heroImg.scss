@@ -76,6 +76,7 @@ svg {
             font-weight: bold;
         }
     }
+
     @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -92,6 +93,18 @@ svg {
         }
     }
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .heroTextCompany{
+        position:absolute;
+        width:100%;
+        top: 17%;
+        color: white;
+        font-size: 6vw;
+        font-weight: bold;
+    }
+}
+
 }
 
 .fadeText {
@@ -115,7 +128,7 @@ svg {
     height: 40px;
     width: 120px;
     background: lightseagreen;
-    margin: 10px;
+    margin: 30px;
     box-shadow: 0 0 1px #ccc;
     -webkit-transition: all 0.5s ease-in-out;
     border: 0px;
@@ -129,4 +142,5 @@ svg {
     -webkit-transform: scale(1.1);
     background: #31708f;
 }
+
 
