@@ -13,16 +13,13 @@ export default () => {
             <div id="heroImgCarousel" className="carousel slide carousel-fade" data-pause="false" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="heroImgContainer carousel-item active" data-interval="8000">
-                        {/* eslint-disable-next-line */}
-                        <img src={hero1} className="heroImg d-block" alt="Nighttime photo of Golden Gate Bridge in San Francisco" />
+                        <img src={hero1} className="heroImg d-block" alt="Golden Gate Bridge in San Francisco at night" />
                     </div>
                     <div className="heroImgContainer carousel-item" data-interval="8000">
-                        {/* eslint-disable-next-line */}
-                        <img src={hero2} className="heroImg d-block" alt="Evening photo of the city of San Francisco" />
+                        <img src={hero2} className="heroImg d-block" alt="A beautiful evening in San Francisco" />
                     </div>
                     <div className="heroImgContainer carousel-item" data-interval="8000">
-                        {/* eslint-disable-next-line */}
-                        <img src={hero3} className="heroImg d-block" alt="Evening photo of the city of San Francisco" />
+                        <img src={hero3} className="heroImg d-block" alt="A beautiful evening in San Francisco" />
                     </div>
                 </div>
             </div>
