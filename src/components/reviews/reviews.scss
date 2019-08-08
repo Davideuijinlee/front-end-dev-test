@@ -33,11 +33,6 @@
         }
     }
 
-    .reviewCarousalContainer {
-        background-color: rgb(12, 33, 86)
-    }
-
-
     .starsContainerNoScroll {
         unicode-bidi: bidi-override;
         direction: rtl;
@@ -60,6 +55,11 @@
         -o-transition: all 2s ease;
         -ms-transition: all 2s ease;
         transition: all 2s ease;
+    }
+
+    .reviewCarousalContainer {
+        height:100%;
+        background-color: rgb(12, 33, 86)
     }
 
 }
