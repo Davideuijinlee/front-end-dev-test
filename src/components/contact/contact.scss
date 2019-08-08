@@ -1,0 +1,58 @@
+.contactContainer {
+    height:auto;
+    display: flex;
+    position:relative;
+
+    INPUT,TEXTAREA {
+        border-top: thin solid #aaa
+        }
+
+    .formContainer{
+        // background-color:red;
+        height:100%;
+    }
+
+    .contactInfoContainer{
+        height:100%;
+    }
+
+    .contactMargin{
+        margin-top:10%;
+    }
+
+    .contactTitle{
+        padding-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        color: #613476;
+        margin-bottom: 5px;
+        left: 2%;
+    }
+
+    .inputText{
+        height: 40px;
+        margin: 10px 0;
+    }
+
+    .inputMsg{
+        padding-right:10px;
+        height:200px;
+    }
+
+    .contactInfoContainer{
+        
+        .contactTitle{
+            padding: 10% 0 0 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #613476;
+            margin-bottom: 5px;
+
+
+            width: 30%;
+        }
+        .contactInfoText{
+            font-family: 'Muli', sans-serif;
+            color: rgb(55, 55, 55);
+        }
+    }
+    
+}
