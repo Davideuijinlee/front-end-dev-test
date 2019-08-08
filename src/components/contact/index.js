@@ -5,7 +5,7 @@ import ContactInfo from './contactInfo';
 
 export default () => {
     return (
-        <div className="row contactContainer">
+        <div className="contactContainer">
             <ContactForm/>
             <ContactInfo/>
         </div>

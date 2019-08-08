@@ -1,19 +1,26 @@
 .contactContainer {
+    overflow:hidden;
     height:auto;
-    display: flex;
-    position:relative;
 
     INPUT,TEXTAREA {
+        
         border-top: thin solid #aaa
         }
 
     .formContainer{
-        // background-color:red;
         height:100%;
+        overflow:hidden;
+        display: inline-block;
     }
 
     .contactInfoContainer{
         height:100%;
+        
+    }
+
+    .row{
+        margin:0;
+        padding:0;
     }
 
     .contactMargin{
@@ -26,30 +33,37 @@
         color: #613476;
         margin-bottom: 5px;
         left: 2%;
+        
     }
 
     .inputText{
         height: 40px;
         margin: 10px 0;
+            overflow:hidden;
+
     }
 
     .inputMsg{
         padding-right:10px;
         height:200px;
+            overflow:hidden;
+
     }
 
     .contactInfoContainer{
-        
+        display: inline-block;
+
         .contactTitle{
+            
             padding: 10% 0 0 0;
             font-family: 'Montserrat', sans-serif;
             color: #613476;
             margin-bottom: 5px;
-
-
             width: 30%;
         }
+
         .contactInfoText{
+            overflow:hidden;
             font-family: 'Muli', sans-serif;
             color: rgb(55, 55, 55);
         }

@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import Navbar from './navBar';
 import './navBar.scss';
+import colorLogo from '../../assets/images/logo/logo-color.svg';
+import whiteLogo from '../../assets/images/logo/logo-white.svg';
+
 
 
 export default class NavHeader extends Component {
     state = {
         color: 'clear',
         textColor: 'text-white',
+        logo:{whiteLogo},
         navSize: 'navSizeGrow',
         timeoutDebounce: null
     }
@@ -41,13 +45,15 @@ export default class NavHeader extends Component {
             this.setState({
                 color: 'dark',
                 textColor: 'text-white',
-                navSize: 'navBarShrink '
+                navSize: 'navBarShrink',
+                logo:{colorLogo},
             })
         } else {
             this.setState({
                 color: 'clear',
                 textColor: 'text-white',
-                navSize: 'navSizeGrow'
+                navSize: 'navSizeGrow',
+                logo:{whiteLogo}
             })
         }
     }
@@ -55,7 +61,7 @@ export default class NavHeader extends Component {
 
 
     render() {
-        return <Navbar navSize={this.state.navSize} headerColor={this.state.color} textColor={this.state.textColor} />
+        return <Navbar logo={this.state.logo} navSize={this.state.navSize} headerColor={this.state.color} textColor={this.state.textColor} />
     }
 
 }

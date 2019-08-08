@@ -1,0 +1,29 @@
+@import '../../assets/stylesheets/mediaQueries.scss';
+
+.footerContainer {
+    overflow:hidden;
+    height: 30%;
+    padding: 0;
+    margin: 0;
+    background-color: #FAFAFA;
+
+    .footerTextContainer {
+        padding-top: 2%;
+        text-align: center;
+    }
+
+    .socialImgContainer {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+
+        .socialImg {
+            height: 40px;
+            vertical-align: middle;
+        }
+    }
+
+
+}

@@ -21,11 +21,11 @@ export default class ContactForm extends Component {
     render() {
         const { name, email, subject, message } = this.state;
         return (
-            <div className="col-12 col-sm-12 cold-md-12 col-lg-8 formContainer">
-                <h2 className="offset-0 offset-sm-4 offset-md-4 col-md-3 offset-lg-5 contactTitle text-center">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-8 formContainer">
+                <h2 className="offset-0 offset-sm-4 offset-md-4 col-md-3 offset-lg-4 contactTitle text-center">
                     Questions?
                 </h2>
-                <form className="offset-2 offset-lg-3">
+                <form className="offset-lg-2">
                     <input
                         value={name}
                         onChange={this.handleInputChange}

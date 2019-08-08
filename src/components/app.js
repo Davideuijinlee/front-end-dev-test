@@ -8,8 +8,8 @@ import MeetTheTeam from './meetTheTeam';
 import WhatWeDo from './whatwedo';
 import LearnMore from './learnMore';
 import Reviews from './reviews';
-import Contact from './contact'
-
+import Contact from './contact';
+import Footer from './footer';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
       <LearnMore />
       <Reviews />
       <Contact />
+      <Footer />
     </Fragment>
   );
 }
