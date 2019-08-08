@@ -1,6 +1,6 @@
-import React, { Fragment, useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
-export default props => {
+export default () => {
 
     const ref = useRef();
     const onScreen = useOnScreen(ref, '-150px');
@@ -27,7 +27,6 @@ export default props => {
         </div>
     );
 }
-
 
 // Hook
 function useOnScreen(ref, rootMargin = '0px') {

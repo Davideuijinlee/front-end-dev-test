@@ -6,9 +6,6 @@
     overflow:hidden;
 }
 
-
-
-    //NavBar on Scroll
     .navBarShrink {
         padding: 0;
         width: 100%;
@@ -34,9 +31,6 @@
         position: fixed;
     }
     
-
-
-
     @include extraSmall {
         html:not([data-scroll='0']) {
             div#responsive-navbar-nav { 
