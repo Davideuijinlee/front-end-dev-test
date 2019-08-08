@@ -1,8 +1,10 @@
 @import  '../../assets/stylesheets/mediaQueries.scss';
 
 .LearnMoreContainer{
+    position: relative;
     padding:0;
-    height: 80%;
+    height: auto;
+    min-height: 80%;
     overflow:hidden;
     background: url('../../assets/images/banner/banner-2.jpg') no-repeat center center; 
     -webkit-background-size: cover;
